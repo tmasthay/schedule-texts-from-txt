@@ -1,7 +1,7 @@
 # schedule-texts-from-txt
 Schedule iMessage or SMS texts from `.txt` files from your Mac.
 
-![a cute smiling mailbox](./mailbox.png)
+![a cute smiling mailbox](gui_pngs/mailbox.png)
 
 # Send messages
 1. Clone this repo to your computer.
