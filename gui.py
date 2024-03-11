@@ -122,8 +122,12 @@ class CustomDateTimePicker(QWidget):
         root = os.path.abspath(d['SCHEDULED_TEXTS_DIRECTORY'])
 
         # Constructing filename
+        if '=' in recipientName:
+            true_recipient = recipientName.split('=')[0]
+        else:
+            true_recipient = recipientName
         fileName = (
-            f"Text {recipientName} {month} {day}, {hour}:{minute}{ampm}.txt"
+            f"Text {true_recipient} {month} {day}, {hour}:{minute}{ampm}.txt"
         )
         fileName = os.path.join(root, fileName)
 
