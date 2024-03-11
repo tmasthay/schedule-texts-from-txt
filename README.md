@@ -29,7 +29,9 @@ The script parses files in the `scheduled_messages` directory that follow this f
 
 ![Changing someone's number](gui_pngs/old_friend.png)
 
-![What the updated SETTINGS.txt file will look like](gui_pngs/updated_database.png)
+![What the updated SETTINGS.txt file will look like](gui_pngs/gui_side_effect.png)
+
+![GUI only writes files, does not send them](gui_pngs/gui_doesnt_send_messages.png)
 
 # Help & Feedback
 Please create a GitHub issue if you have feedback or need help. Thanks! 
