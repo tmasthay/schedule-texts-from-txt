@@ -25,11 +25,11 @@ The script parses files in the `scheduled_messages` directory that follow this f
 **Will only send texts with `{datetime}` less than MAX_OVERTIME_MINS, 30 minutes by default. This is to prevent accidentally sending really old messages. For example, if you had this script running on a cron that failed then restarted a week later, you probably don't want those week-old messages to send.*
 
 # GUI
-![Adding a new contact](new_person.png)
+![Adding a new contact](gui_pngs/new_person.png)
 
-![Changing someone's number](old_friend.png)
+![Changing someone's number](gui_pngs/old_friend.png)
 
-![What the updated SETTINGS.txt file will look like](updated_database.png)
+![What the updated SETTINGS.txt file will look like](gui_pngs/updated_database.png)
 
 # Help & Feedback
 Please create a GitHub issue if you have feedback or need help. Thanks! 
