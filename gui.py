@@ -15,11 +15,10 @@ import os
 
 
 class ScrollableComboBox(QComboBox):
-    def __init__(self, items=[], wraparound=False, parent=None, overwrite=True):
+    def __init__(self, items=[], wraparound=False, parent=None):
         super().__init__(parent)
         self.addItems(items)
         self.wraparound = wraparound
-        self.overwrite = overwrite
         self.installEventFilter(self)
 
     def eventFilter(self, source, event):
@@ -42,8 +41,9 @@ class ScrollableComboBox(QComboBox):
 
 
 class CustomDateTimePicker(QWidget):
-    def __init__(self):
+    def __init__(self, overwrite=True):
         super().__init__()
+        self.overwrite = overwrite
         self.initUI()
 
     def initUI(self):
