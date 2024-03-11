@@ -25,6 +25,15 @@ The script parses files in the `scheduled_messages` directory that follow this f
 **Will only send texts with `{datetime}` less than MAX_OVERTIME_MINS, 30 minutes by default. This is to prevent accidentally sending really old messages. For example, if you had this script running on a cron that failed then restarted a week later, you probably don't want those week-old messages to send.*
 
 # GUI
+A GUI is provided if you are willing to add another dependency via
+```
+pip install PyQt5
+```
+This allows you to interface a little more easily. Although non-obvious, the timing boxes at the bottom of the GUI are **scrollable**. 
+Although not as visually appealing as the iPhone alarm/countdown timer scheduler, it works roughly the same.
+If you wish to send now, simply don't change the time...it always defaults to the current time.
+On top of this, adding/changing numbers can also be driven through the GUI. Examples below.
+
 You can easily add new contacts with form `contact=number` as shown below.
 
 ![Adding a new contact](gui_pngs/new_person.png)
