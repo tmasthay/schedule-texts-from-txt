@@ -95,7 +95,7 @@ class CustomDateTimePicker(QWidget):
 
         mainLayout.addLayout(pickerLayout)
         self.setLayout(mainLayout)
-        self.setWindowTitle('Custom DateTime Picker with AM/PM')
+        self.setWindowTitle('Schedule Message')
 
         self.scheduleButton = QPushButton("Schedule", self)
         self.scheduleButton.clicked.connect(self.createScheduleFile)
